@@ -1,0 +1,4 @@
+ro.display.series=Motorola One Fusion
+ro.product.board=sdm710
+ro.board.platform=sdm710
+vendor.gatekeeper.disable_spu=true
