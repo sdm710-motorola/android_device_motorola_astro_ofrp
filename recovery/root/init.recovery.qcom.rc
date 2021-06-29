@@ -28,9 +28,7 @@
 import /init.recovery.qcom_decrypt.rc
 
 on init
-    insmod /vendor/lib/modules/himax_v2_mmi_hx83102d.ko
-    insmod /vendor/lib/modules/himax_v2_mmi.ko
-    insmod /vendor/lib/modules/nova_0flash_mmi.ko
+    start load_modules
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
@@ -43,8 +41,14 @@ on property:ro.crypto.type=file
     setprop ro.crypto.state encrypted
     setprop twrp.apex.loaded true
 
-service qseecomd /vendor/bin/qseecomd
+service load_modules /system/bin/load_modules.sh
     oneshot
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
+
+service qseecomd /system/bin/qseecomd
     user root
     group root
     disabled
