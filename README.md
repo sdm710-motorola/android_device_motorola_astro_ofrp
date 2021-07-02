@@ -1,4 +1,4 @@
-# TWRP Device configuration for Motorola One Fusion
+# OFRP Device configuration for Motorola One Fusion
 
 ## Device specifications
 
