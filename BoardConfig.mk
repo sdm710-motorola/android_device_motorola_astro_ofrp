@@ -224,8 +224,8 @@ TW_MAX_BRIGHTNESS := 4095
 TW_DEFAULT_BRIGHTNESS := 420
 TW_THEME := portrait_hdpi
 
-TW_Y_OFFSET := 45
-TW_H_OFFSET := -44 # Fix 1 pixel 
+TW_Y_OFFSET := 0 #45
+TW_H_OFFSET := 0 # -44 # Fix 1 pixel 
 
 
 # Team Win Recovery - Rollback
