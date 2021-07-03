@@ -84,11 +84,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# Use system (ROM) fingerprint where available
 	export OF_USE_SYSTEM_FINGERPRINT=1
 
-	# OTA support for custom roms
-
+	
 	# OTA for custom ROMs
-    export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
-    export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
+    	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
+    	export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
 	
 	# Rounded Corners
 	export OF_STATUS_INDENT_LEFT="48"
