@@ -18,11 +18,6 @@ Front Camera | 8 MP (f/2.0)
 
 ![Device Picture](https://fdn2.gsmarena.com/vv/pics/motorola/one-fusion-1.jpg)
 
-
-### Kernel Source
-
-Check here: https://github.com/uotlaf/android_kernel_motorola_sdm670
-
 ### How to compile
 
 ```sh
